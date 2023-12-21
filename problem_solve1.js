@@ -15,3 +15,8 @@ console.log(alphabetically)
 
 //prbolem 3
 //কিভাবে আমরা আমাদের শ্রেণিকক্ষের সকলের রোল ক্রম অনুযায়ী সাজাতে পারি
+const rollNumber = [3, 5,  2, 1, 10, 7, 30];
+console.log(rollNumber)
+console.log(rollNumber.sort(function(a, b){
+    return a-b
+}))
