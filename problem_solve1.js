@@ -16,7 +16,6 @@ console.log(alphabetically)
 //prbolem 3
 //কিভাবে আমরা আমাদের শ্রেণিকক্ষের সকলের রোল ক্রম অনুযায়ী সাজাতে পারি ?
 const rollNumber = [3, 5,  2, 1, 10, 7, 30];
-console.log(rollNumber)
 console.log(rollNumber.sort(function(a, b){
     return a-b
 }))
@@ -46,3 +45,18 @@ function countVowel(sentence){
    return count
 }
 console.log(countVowel('I Love Bangladesh'))
+
+//problem 6
+//কোন Array থেকে dublicate নাম্বার গুলোকে কিভাবে বের করে আনতে পারি 
+const numbers = [1, 4, 5, 6, 7, 6, 8, 10, 9, 10];
+const dublicate = numbers.filter(function(value, index, array){
+    return array.indexOf(value) !== index;
+})
+console.log(dublicate);
+//problem 6
+//কোন Array থেকে unique নাম্বার গুলোকে কিভাবে বের করে আনতে পারি 
+const num = [1, 4, 5, 6, 7, 6, 8, 10, 9, 10];
+const unique = numbers.filter(function(value, index, array){
+    return array.indexOf(value) === index;
+})
+console.log(unique);
